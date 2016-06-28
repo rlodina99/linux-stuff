@@ -13,9 +13,9 @@ Aplicatie, interactiva, care ruleaza in terminal si asteapta comenzile tale
 
 ##Files && diectory
 
-* `~` = directorul curent
+* `~` = user home directory 
 
-* pwd - afiseaza directorul curent
+* `pwd` - afiseaza directorul curent
 * `cd <path>` : schimba directorul curent
 * `mkdir <path>` - creare director
 * `cp` - copy files and directories
@@ -23,7 +23,7 @@ Aplicatie, interactiva, care ruleaza in terminal si asteapta comenzile tale
 
 Ex: `rm -dRf ~/test` - sterge -d = director, -R = recursiv, -f=force(fara confirmare)
 * `touch <file_1> [<file_n>]` - creaza fisiere
-* `cat <file>' - afisare continut fisier
+* `cat <file>` - afisare continut fisier
 
  
 
@@ -34,12 +34,12 @@ paginare: 'less' sau 'more'
 
 ### Redirectare
  ```
- ls > files.txt  			   //creaz fis files.txt co cout-ul comenzii ls
- ls /home/razvan >> files.txt  //adauga in fisier rez. lui ls
+ ls > files.txt  			   //creaz fis files.txt cu cout-ul comenzii ls
+ ls /home/razvan >> files.txt  //append in fisier rez. lui ls
  ```
 
-### Pipe |
-  - reirectare iesire (cout) la intrarea (cin) altui program
+### Pipe 
+  - redirectare iesire (cout) la intrarea (cin) altui program. Caracterul **|**
   
 `cat MyFile.cfg | less` - iesirea (cout) lui cat este redirectata ca intrare (cin) la aplicatia less
 
@@ -47,3 +47,6 @@ paginare: 'less' sau 'more'
 - https://www.mattcutts.com/blog/a-quick-tutorial-on-screen/
 - http://aperiodic.net/screen/quick_reference
 
+Ex:
+
+- `screen -d -m script.sh` - start screen as a detached process
